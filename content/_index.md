@@ -3,8 +3,9 @@ title: Home
 summary: >-
   Home page for Eyewool International
 ---
-<img src="content\images\logo4.png"  alt="Eyewool Logo" width=200 />
 
+![art:Eyewool Logo](/images/logo4.png)
+{ .half .float-left }
 
 Welcome to the home page for Eyewool International. 
 

@@ -4,9 +4,15 @@ summary: >-
   Home page for Eyewool International
 ---
 
-![art:Eyewool Logo](/images/logo4.png)
+
+![art:alt_text](/images/logo4.png ['caption'])
 {
-  [.half .float-left]
+  [.half]
+  [#id]
+  [caption         = "caption"]
+  [content_warning = "content_warning"]
+  [style           = "style"]
+  [work            = "work"]
 }
 
 Welcome to the home page for Eyewool International. 

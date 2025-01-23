@@ -4,7 +4,10 @@ summary: >-
   Home page for Eyewool International
 ---
 
-![art:Eyewool Logo](/images/logo4.png){ .half .float-left }
+![art:Eyewool Logo](/images/logo4.png)
+{
+  [.half .float-left]
+}
 
 Welcome to the home page for Eyewool International. 
 

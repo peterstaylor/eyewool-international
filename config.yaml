@@ -25,8 +25,9 @@ params:
       Logo: 
         URL: images/logo3.png
     
-theme: 
-  mode: "light"
+properties: 
+  theme: 
+    mode: "light"
 
 markup:
   goldmark:

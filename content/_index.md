@@ -4,12 +4,7 @@ summary: >-
   Home page for Eyewool International
 ---
 
-
-![art:Eyewool Logo](/images/logo4.png)
-
-Welcome to the home page for Eyewool International. 
-
-Eyewool International is based in Indianapolis, Indiana and it is run by musician and electrical engineer Taylor Sullivan-Peters.
+For now, Eyewool International is me, Taylor Sullivan-Peters. I'm a musician and electrical engineer in Indianapolis, IN. 
 
 Eyewool International hardly counts as a company, but we're getting there.  
 

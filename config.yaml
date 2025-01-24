@@ -19,3 +19,16 @@ menu:
 
 params:
   description: Tools for making sounds.
+  BookTheme: "light"
+  Platen: 
+    Display: 
+      Logo: 
+        URL: content\images\logo3.png
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+       block: true 

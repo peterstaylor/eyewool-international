@@ -23,7 +23,7 @@ params:
   Platen: 
     Display: 
       Logo: 
-        URL: content\images\logo3.png
+        URL: content/images/logo3.png
 
 markup:
   goldmark:

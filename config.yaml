@@ -23,7 +23,7 @@ params:
   Platen: 
     Display: 
       Logo: 
-        URL: images/logo3.png
+        URL: images/logo1.png
     Theme: 
       Mode: "light"
     

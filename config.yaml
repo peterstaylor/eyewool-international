@@ -20,11 +20,13 @@ menu:
 params:
   description: Tools for making sounds.
   BookTheme: "light"
-  mode: "light"
   Platen: 
     Display: 
       Logo: 
         URL: images/logo3.png
+    Theme: 
+      mode: "light"
+
 
 markup:
   goldmark:

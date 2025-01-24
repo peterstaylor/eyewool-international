@@ -1,5 +1,5 @@
 ---
-title: Picaresques
+title: Pedals
 weight: 20
 platen:
   menu:

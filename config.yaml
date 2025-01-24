@@ -24,11 +24,10 @@ params:
     Display: 
       Logo: 
         URL: images/logo3.png
+    Theme: 
+      Properties: 
+        Mode: "light"
     
-properties: 
-  theme: 
-    properties:
-      mode: "light"
 
 markup:
   goldmark:

@@ -6,9 +6,3 @@ platen:
     collapse_section: true
 ---
 
-Start your first (or any) session in media res.
-
-Roll 1d6 or choose:
-
-```section
-```

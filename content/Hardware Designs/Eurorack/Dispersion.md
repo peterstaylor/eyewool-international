@@ -1,5 +1,5 @@
 ---
-title: Resting
+title: Dispersion
 weight: 2
 summary: |
   Mechanisms for resting and advancement between adventures

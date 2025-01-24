@@ -27,7 +27,8 @@ params:
     
 properties: 
   theme: 
-    mode: "light"
+    properties:
+      mode: "light"
 
 markup:
   goldmark:

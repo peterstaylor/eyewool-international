@@ -12,7 +12,7 @@ summary: |
 - Panel: 2.0 
 
 ## Module Interface Description: 
-<img src="images/dispersionPanel.png" alt="Dispersion Panel" height="20em" width="auto">
+<img src="./dispersionPanel.png">
 
 Dispersion creates 12 slow modulation waves and 2 gates to inject almost predictable and slightly controllable slow variation into your patch. All outputs are derived from hardware recombination of four digitally-generated LFOs. There is a single speed control which collectively adjusts the speed of all four of the module's base LFO rates. 
 ### CV Outputs

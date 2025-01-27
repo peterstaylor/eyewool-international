@@ -1,6 +1,6 @@
 ---
 title: Pedals
-weight: 20
+weight: 10
 platen:
   menu:
     collapse_section: true

@@ -1,7 +1,7 @@
 ---
 title: Dual Passive Rectifier
-weight: 3
+weight: 2
 summary: |
-  Mechanisms for handling action scenes and combat
+  A simple, passive signal chopping device
 ---
 

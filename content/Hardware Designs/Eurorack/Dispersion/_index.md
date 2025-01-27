@@ -7,9 +7,9 @@ summary: |
 
 # Dispersion Modulator
 - HW Revision as of 01.27.25
-- Processor: 2.0
-- I/O Board: 2.0
-- Panel: 2.0 
+  - Processor: 2.0
+  - I/O Board: 2.0
+  - Panel: 2.0 
 
 ## Module Interface Description: 
 <img src="./dispersionPanel.png">

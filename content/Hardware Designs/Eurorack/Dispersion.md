@@ -2,88 +2,47 @@
 title: Dispersion
 weight: 2
 summary: |
-  Mechanisms for resting and advancement between adventures
+  A slow LFO that doesn't care about you
 ---
 
-Whenever you take the time and space to relax in relative safety for at least one week, you are
-resting. After you rest, you may fill or swap out any of your tricks.
+# Dispersion Modulator
+HW Revision as of 01.27.25
+Processor: 2.0
+I/O Board: 2.0
+Panel: 2.0 
 
-## Recovering HP
+## Module Interface Description: 
+<img src="content\Hardware Designs\Eurorack\dispersionPanel.png" alt="Dispersion Panel" height="20em" width="auto">
 
-Whenever you rest, roll your HD. If the result is higher than your current HP, that's your new
-total. Otherwise, +1 to your current HP, up the combined face value of your HD.
+Dispersion creates 12 slow modulation waves and 2 gates to inject almost predictable and slightly controllable slow variation into your patch. All outputs are derived from hardware recombination of four digitally-generated LFOs. There is a single speed control which collectively adjusts the speed of all four of the module's base LFO rates. 
+### CV Outputs
+It is helpful to think of 12 CV outputs in three columns, 1 through 3, and four rows, A through D. 
 
-```details { summary="Example: Resting at 3HP with 2d6 HD" }
-Roll 2d6. If the result is 2 or 3, increase your current HP to 4. If it's higher, set your current
-HP to the result.
-```
+Column 1 outputs provide four bi-polar (+/-8V) LFOs that sit between a triangle and sine shape. Their relative rates go from slowest to fastest  as you go toward the bottom of the module--slowest on top, fastest on bottom. 
 
-## Spending Marks
+The remaining two columns provide difference rectified combinations of the four original waves. These outputs are sometimes spiky, sometimes smooth, and often very nearly but not quite repetitive. 
 
-After you rest, you may spend your marks.
+The center column provides negative polarity outputs (-8V peak), the far right column provides positive polarity outputs (+8V peak). While each of these outputs are influenced by all four base waves, outputs are most influenced by the base wave with which they share a row. The top-most slowest wave influences the top most center and right side difference rectifier output, and so on. 
 
-If you have at least as many marks as the size of their associated die, you may spend that many
-marks to increase your die size one step.
+### Gate Outputs
+The two bottom jacks on the module (those with square symbols around them), provide 0V-8V gates. These gates are based two internal comparator circuits which compare the values of the four base LFOs to generate arrhythmic gate patterns which can be used to trigger other events in a patch, such as envelopes or sequential switches. 
 
-In addition to increasing a die size, you may spend marks to:
+## CV Input
+There is one CV input to control the overall relative speed of the four base LFOs. It will accept a bi-polar control voltage from -10V to +10V. With nothing patched into the CV jack, the knob will control the speed of the system. With a CV patched into the jack, the knob becomes an attenuverter for the CV that's been applied. 
 
-| Dice Type |     Marks to Spend      | Effect                     |
-| :-------: | :---------------------: | :------------------------- |
-|    HD     |            2            | Mark a domain              |
-|    HD     |      Domain Count       | Gain a new domain          |
-|    HD     | 3x Companion Slot Count | Gain a companion slot      |
-|    HD     |      Combined Max       | Add another die            |
-|  Domain   |            2            | Mark a trick               |
-|  Domain   |   3x Trick Slot Count   | Gain a trick slot          |
-|   Trick   |      Combined Max       | Add another die            |
-|   Trick   |  3x Current Use Count   | Gain another use per scene |
+## Module Functional Description: 
+Every time power is applied to the module, it will briefly perform some internal randomization calculations. These calculations define the starting phase of each base LFO as well as a fixed frequency multiplier per LFO that is applied to all rate calculations. Each base LFO will always remain roughly within a fixed frequency range relative to the CV speed control, but they will vary every power cycle slightly. 
 
-### Increase Die Size
+Below is a table of the rough cycle time you can expect from each base LFO. This time can vary as much as 25% for each individual output based on the results of the random calculations. 
 
-If you have 3d6 HD, you must spend 6 marks to increase your HD to 3d8.
+| Output | Slowest Cycle | Fastest Cycle |
+| ------ | ------------- | ------------- |
+| A      | 30 minutes    | 4 minutes     |
+| B      | 15 minutes    | 2 minutes     |
+| C      | 5 minutes     | 45 seconds    |
+| D      | 2 minutes     | 15 seconds    |
 
-If your domain is a d10, you must spend 10 marks to increase it to a d12.
-
-### HD Marks to Mark a Domain
-
-You must spend 2 HD marks to mark any one domain.
-
-If you spend 6 marks, you could mark a domain 3 times, mark 3 domains once each, or mark a domain
-once and another twice.
-
-### HD Marks to Gain a Domain
-
-If you have 3 domains, you must spend 3 marks to gain a new domain.
-
-### HD Marks to Gain a Companion Slot
-
-If you have 2 companion slots, you must spend 6 marks to add a third companion slot.
-
-### HD Marks to Increase Die Count
-
-If you have 1d6 HD, you must spend 6 marks to increase your HD to 2d6.
-
-If you have 3d8 HD, you must spend 24 marks to increase your HD to 4d8.
-
-### HD Marks to Mark a Trick
-
-You must spend 2 domain marks to mark any trick in that domain.
-
-If you spend 6 marks, you could mark a trick 3 times, mark 3 tricks once each, or mark a trick once
-and another twice.
-
-### Domain Marks to Gain a Trick Slot
-
-If you have 3 trick slots for this domain, you must spend 9 marks to gain a new trick slot.
-
-### Trick Marks to Increase Die Count
-
-If your trick's dice are 2d6, you must spend 12 marks to increase them to 3d6.
-
-If your trick's dice are 4d12, you must spend 48 marks to increase them to 5d12.
-
-### Trick Marks to Increase Use Count
-
-If you can use your trick 1/scene, you must spend 3 marks to increase your use count to 2/scene.
-
-If you can use your trick 3/scene, you must spend 9 marks to increase your use count to 4/scene.
+## Power Requirements
+- 100ma Draw from +12
+- 80mA draw from -12
+- Power header is reversible, you may plug in either orientation and it will power the module without any risk of damage

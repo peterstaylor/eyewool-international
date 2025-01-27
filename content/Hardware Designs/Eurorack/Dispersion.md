@@ -6,13 +6,13 @@ summary: |
 ---
 
 # Dispersion Modulator
-HW Revision as of 01.27.25
-Processor: 2.0
-I/O Board: 2.0
-Panel: 2.0 
+- HW Revision as of 01.27.25
+- Processor: 2.0
+- I/O Board: 2.0
+- Panel: 2.0 
 
 ## Module Interface Description: 
-<img src="content\Hardware Designs\Eurorack\dispersionPanel.png" alt="Dispersion Panel" height="20em" width="auto">
+<img src="dispersionPanel.png" alt="Dispersion Panel" height="20em" width="auto">
 
 Dispersion creates 12 slow modulation waves and 2 gates to inject almost predictable and slightly controllable slow variation into your patch. All outputs are derived from hardware recombination of four digitally-generated LFOs. There is a single speed control which collectively adjusts the speed of all four of the module's base LFO rates. 
 ### CV Outputs
@@ -27,7 +27,7 @@ The center column provides negative polarity outputs (-8V peak), the far right c
 ### Gate Outputs
 The two bottom jacks on the module (those with square symbols around them), provide 0V-8V gates. These gates are based two internal comparator circuits which compare the values of the four base LFOs to generate arrhythmic gate patterns which can be used to trigger other events in a patch, such as envelopes or sequential switches. 
 
-## CV Input
+### CV Input
 There is one CV input to control the overall relative speed of the four base LFOs. It will accept a bi-polar control voltage from -10V to +10V. With nothing patched into the CV jack, the knob will control the speed of the system. With a CV patched into the jack, the knob becomes an attenuverter for the CV that's been applied. 
 
 ## Module Functional Description: 

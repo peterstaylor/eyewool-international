@@ -15,17 +15,18 @@ summary: |
 <img src="./dispersionPanel.png">
 
 Dispersion creates 12 slow modulation waves and 2 gates to inject almost predictable and slightly controllable slow variation into your patch. All outputs are derived from hardware recombination of four digitally-generated LFOs. There is a single speed control which collectively adjusts the speed of all four of the module's base LFO rates. 
+
 ### CV Outputs
 It is helpful to think of 12 CV outputs in three columns, 1 through 3, and four rows, A through D. 
 
 Column 1 outputs provide four bi-polar (+/-8V) LFOs that sit between a triangle and sine shape. Their relative rates go from slowest to fastest  as you go toward the bottom of the module--slowest on top, fastest on bottom. 
 
-The remaining two columns provide difference rectified combinations of the four original waves. These outputs are sometimes spiky, sometimes smooth, and often very nearly but not quite repetitive. 
+Columns 2 and 3 provide difference rectified combinations of the four original waves. These outputs are sometimes spiky, sometimes smooth, and often very nearly but not quite repetitive. 
 
-The center column provides negative polarity outputs (-8V peak), the far right column provides positive polarity outputs (+8V peak). While each of these outputs are influenced by all four base waves, outputs are most influenced by the base wave with which they share a row. The top-most slowest wave influences the top most center and right side difference rectifier output, and so on. 
+Column 2 provides negative polarity outputs (-8V peak); column 3 provides positive polarity outputs (+8V peak). While each of these outputs are influenced by all four base waves, outputs are most influenced by the base wave with which they share a row. Row 1's first column most heavily impacts column 2 and 3 on row 1 and so on. 
 
 ### Gate Outputs
-The two bottom jacks on the module (those with square symbols around them), provide 0V-8V gates. These gates are based two internal comparator circuits which compare the values of the four base LFOs to generate arrhythmic gate patterns which can be used to trigger other events in a patch, such as envelopes or sequential switches. 
+The two bottom jacks on the module (those with square symbols around them), provide 0V-8.5V gates. These gates are based two internal comparator circuits which compare the values of the four base LFOs to generate arrhythmic gate patterns which can be used to trigger other events in a patch, such as envelopes or sequential switches. 
 
 ### CV Input
 There is one CV input to control the overall relative speed of the four base LFOs. It will accept a bi-polar control voltage from -10V to +10V. With nothing patched into the CV jack, the knob will control the speed of the system. With a CV patched into the jack, the knob becomes an attenuverter for the CV that's been applied. 

@@ -13,5 +13,5 @@ Slowly, I'm developing a pile of Eurorack modules.
 The [Dual Passive Rectifier]("Dual Passive Rectifier.md") is a flexible 2hp passive module. 
 
 ## Dispersion
-[Dispersion](Dispersion.md) is a very slow, not-quite random modulation source with 12 CV outputs and 2 gate outputs.
+[Dispersion]("content\Hardware Designs\Eurorack\Dispersion\_index.md") is a very slow, not-quite random modulation source with 12 CV outputs and 2 gate outputs.
 

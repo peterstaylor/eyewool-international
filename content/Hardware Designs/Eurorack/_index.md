@@ -10,8 +10,8 @@ platen:
 Slowly, I'm developing a pile of Eurorack modules. 
 
 ## Dual Passive Rectifier
-[Dual Passive Rectifier]("./Eurorack/DPR/_index.md") is a flexible 2hp passive module. 
+[Dual Passive Rectifier]("./Eurorack/DPR/") is a flexible 2hp passive module. 
 
 ## Dispersion
-[Dispersion]("./Eurorack/Dispersion/_index.md") is a very slow, not-quite random modulation source with 12 CV outputs and 2 gate outputs.
+[Dispersion]("./Eurorack/Dispersion/") is a very slow, not-quite random modulation source with 12 CV outputs and 2 gate outputs.
 

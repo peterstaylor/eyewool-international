@@ -6,10 +6,15 @@ summary: |
 ---
 
 # Dispersion Modulator
-- HW Revision as of 01.27.25
+- HW Revision
   - Processor: 2.0
   - I/O Board: 2.0
   - Panel: 2.0 
+- FW Revision 1.0
+- Width: 8HP
+- Depth: 1.5"
+- Power: <100mA from +12V, -80mA from -12V
+- Power header is reversible, plug either way with no risk of module damage
 
 ## Module Interface Description: 
 <img src="./dispersionPanel.png">

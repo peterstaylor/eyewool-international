@@ -47,8 +47,3 @@ Below is a table of the rough cycle time you can expect from each base LFO. This
 | B      | 15 minutes    | 2 minutes     |
 | C      | 5 minutes     | 45 seconds    |
 | D      | 2 minutes     | 15 seconds    |
-
-## Power Requirements
-- 100ma Draw from +12
-- 80mA draw from -12
-- Power header is reversible, you may plug in either orientation and it will power the module without any risk of damage

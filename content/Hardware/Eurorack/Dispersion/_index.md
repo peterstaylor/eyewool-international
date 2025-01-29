@@ -5,7 +5,7 @@ summary: |
   A slow LFO that doesn't care about you
 ---
 
-# Dispersion Modulator
+# Dispersion
 - HW Revision
   - Processor: 2.0
   - I/O Board: 2.0

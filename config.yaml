@@ -1,6 +1,7 @@
 # yaml-language-server: $schema=https://platen.io/schemas/config/schema.json
 # Update to your own settings for URL/title
-baseURL: https://eyewool-international.netlify.app/
+#baseURL: https://eyewool-international.netlify.app/
+baseURL: https://eyewool.international/
 title:   Eyewool International
 
 module:

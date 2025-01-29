@@ -17,10 +17,22 @@ summary: |
 - Power header is reversible, plug either way with no risk of module damage
 - Price: $175
 
-## Module Interface Description: 
-<img src="./dispersionPanel.png">
-
+## Module Function: 
 Dispersion creates 12 slow modulation waves and 2 gates to inject almost predictable and slightly controllable slow variation into your patch. All outputs are derived from hardware recombination of four digitally-generated LFOs. There is a single speed control which collectively adjusts the speed of all four of the module's base LFO rates. 
+
+Every time power is applied to the module, it will briefly perform some internal randomization calculations. These calculations define the starting phase of each base LFO as well as a fixed frequency multiplier per LFO that is applied to all rate calculations. Each base LFO will always remain roughly within a fixed frequency range relative to the CV speed control, but they will vary every power cycle slightly. 
+
+Below is a table of the rough cycle time you can expect from each base LFO. This time can vary as much as 25% for each individual output based on the results of the random calculations. 
+
+| Output | Slowest Cycle | Fastest Cycle |
+| ------ | ------------- | ------------- |
+| A      | 30 minutes    | 4 minutes     |
+| B      | 15 minutes    | 2 minutes     |
+| C      | 5 minutes     | 45 seconds    |
+| D      | 2 minutes     | 15 seconds    |
+
+## Module Interface: 
+<img src="./dispersionPanel.png">
 
 ### CV Outputs
 It is helpful to think of 12 CV outputs in three columns, 1 through 3, and four rows, A through D. 
@@ -37,14 +49,4 @@ The two bottom jacks on the module (those with square symbols around them), prov
 ### CV Input
 There is one CV input to control the overall relative speed of the four base LFOs. It will accept a bi-polar control voltage from -10V to +10V. With nothing patched into the CV jack, the knob will control the speed of the system. With a CV patched into the jack, the knob becomes an attenuverter for the CV that's been applied. 
 
-## Module Functional Description: 
-Every time power is applied to the module, it will briefly perform some internal randomization calculations. These calculations define the starting phase of each base LFO as well as a fixed frequency multiplier per LFO that is applied to all rate calculations. Each base LFO will always remain roughly within a fixed frequency range relative to the CV speed control, but they will vary every power cycle slightly. 
 
-Below is a table of the rough cycle time you can expect from each base LFO. This time can vary as much as 25% for each individual output based on the results of the random calculations. 
-
-| Output | Slowest Cycle | Fastest Cycle |
-| ------ | ------------- | ------------- |
-| A      | 30 minutes    | 4 minutes     |
-| B      | 15 minutes    | 2 minutes     |
-| C      | 5 minutes     | 45 seconds    |
-| D      | 2 minutes     | 15 seconds    |

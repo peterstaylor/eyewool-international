@@ -1,5 +1,5 @@
 ---
-title: Dual Passive Rectifier
+title: Melt
 weight: 2
 summary: |
   A simple, passive signal chopping device
@@ -11,7 +11,7 @@ summary: |
 - Passive device, no power required
 
 ## Module Function: 
-<img src="./meltPanel.png">
+<img src="./meltPanel.png" float="left" width="50%">
 
 Melt is like a passive mult, but worse. Instead of a direct path between jacks, there are diodes in the way to act like check valves for voltage. The module has two copies of the same circuit, duplicated on the top half and bottom half of the module with two groups of three jacks. 
 

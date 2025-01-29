@@ -1,6 +1,6 @@
 ---
 weight: 1
-title: Hardware Designs
+title: Hardware
 platen:
   menu:
     flatten_section: true

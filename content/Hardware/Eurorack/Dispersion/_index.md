@@ -32,7 +32,7 @@ Below is a table of the rough cycle time you can expect from each base LFO. This
 | D      | 2 minutes     | 15 seconds    |
 
 ## Module Interface: 
-<img src="./dispersionPanel.png">
+<img src="./dispersionPanel.png" float="left" width="50%">
 
 ### CV Outputs
 It is helpful to think of 12 CV outputs in three columns, 1 through 3, and four rows, A through D. 

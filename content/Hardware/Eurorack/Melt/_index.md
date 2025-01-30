@@ -7,8 +7,8 @@ summary: |
 
 # Melt
 - HW Revision 1.0
-- Price: $50
 - Passive device, no power required
+- Price: $50
 
 ## Module Function: 
 <img src="./meltPanel.png" float="left" width="50%">
@@ -22,10 +22,10 @@ The top A is normalled to the bottom A.
 Because the module is passive, it can be used backward as well, combining inputs at B and C to be output at A. 
 
 ## Suggested Patches: 
-- Route a bi-polar audio rate signal into one of the "A" jacks and "B" and "C" jacks become a crunchy stereo-ified version of your mono input. 
-- Route bi-polar CV into one of the "A" jacks to route the positive side of your wave to the "B" jack and the negative side of your wave to the "C" jack 
-- Mix two CV or audio rate signals into the "B" and "C" jacks for a sliced up combination of the two out the "A" jack
-- Create a mediocre panner by using a DC-coupled mixer to combine an audio rate signal with a bi-polar CV and use jacks "B" and "C" as your left and right panned outputs
+- Route a bi-polar audio rate signal into one of the A jacks and B and C jacks become a crunchy stereo-ified version of your mono input. 
+- Route bi-polar CV into one of the A jacks to route the positive side of your wave to the B jack and the negative side of your wave to the C jack 
+- Mix two CV or audio rate signals into the B and C jacks for a sliced up combination of the two out the A jack
+- Create a mediocre panner by using a DC-coupled mixer to combine an audio rate signal with a bi-polar CV, route into A, and use jacks B and C as your left and right panned outputs
 
 
 

@@ -8,7 +8,7 @@ platen:
 
 Starting in 2023, I began releasing music under my own name. 
 
-## Every Day Carry (2024)
+## Every Day Carry (2024.03.24)
 This is an album about an out of order experience of carrying memories and ideas around all day, every day.
 
 The entire piece began as a series of quasi field recordings of me playing a little tune I haven't been able to forget in all the places I go every day. I played the recordings back in each new room or environment and sometimes I added new accompaniment as the layers piled up. Then, to squish the time, I jumbled them out of order and edited them together until I wanted to listen to the whole thing in one sitting.

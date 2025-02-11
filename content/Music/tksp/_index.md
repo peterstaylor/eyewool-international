@@ -3,7 +3,7 @@ title: Taylor K. Sullivan-Peters
 weight: 10
 platen:
   menu:
-    collapse_section: true
+    collapse_section: false
 ---
 
 Starting in 2023, I began releasing music under my own name. 
